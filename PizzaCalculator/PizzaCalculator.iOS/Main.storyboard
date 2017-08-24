@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="674" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="57" y="70" width="495" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="675" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="64" y="131" width="488" height="30"/>
+                                <state key="normal" title="Calculate">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="676" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="64" y="200" width="488" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1710" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="57" y="285" width="495" height="30"/>
+                                <state key="normal" title="Call">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint id="677" firstItem="674" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50"/>
+                            <constraint id="678" firstItem="675" firstAttribute="top" secondItem="674" secondAttribute="bottom" constant="31"/>
+                            <constraint id="680" firstItem="674" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="37"/>
+                            <constraint id="681" firstItem="8bC-Xf-vdC" firstAttribute="trailingMargin" secondItem="674" secondAttribute="trailing" constant="28"/>
+                            <constraint id="682" firstItem="675" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="44"/>
+                            <constraint id="683" firstItem="8bC-Xf-vdC" firstAttribute="trailingMargin" secondItem="675" secondAttribute="trailing" constant="28"/>
+                            <constraint id="1464" firstItem="676" firstAttribute="top" secondItem="675" secondAttribute="bottom" constant="39"/>
+                            <constraint id="1465" firstItem="676" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="44"/>
+                            <constraint id="1466" firstItem="8bC-Xf-vdC" firstAttribute="trailingMargin" secondItem="676" secondAttribute="trailing" constant="28"/>
+                            <constraint id="1713" firstItem="1710" firstAttribute="top" secondItem="676" secondAttribute="bottom" constant="64"/>
+                            <constraint id="1714" firstItem="1710" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="37"/>
+                            <constraint id="1715" firstItem="8bC-Xf-vdC" firstAttribute="trailingMargin" secondItem="1710" secondAttribute="trailing" constant="28"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="PeopleEntry" destination="674" id="name-outlet-674"/>
+                        <outlet property="CalculateButton" destination="675" id="name-outlet-675"/>
+                        <outlet property="PizzaCountLabel" destination="676" id="name-outlet-676"/>
+                        <outlet property="CallButton" destination="1710" id="name-outlet-1710"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+</document>
