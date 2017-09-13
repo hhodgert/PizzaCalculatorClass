@@ -32,7 +32,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="IPhoneDialer.cs" />
-    <Compile Include="MyClass.cs" />
     <Compile Include="PizzaCalculatorService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
